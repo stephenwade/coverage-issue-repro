@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <script type="module">
+      import { sessionFinished } from '@web/test-runner-mocha';
+
+      import { MyClass } from '../src/my-class.js';
+
+      const obj = new MyClass();
+      obj.fn();
+
+      sessionFinished();
+    </script>
+  </body>
+</html>
